@@ -53,13 +53,13 @@ struct LinkedList<T> {
     // remove head
     mutating func delete() -> T? {
         
-        guard !isEmpty else {
+        guard !isEmpty, let element = head?.val else {
             return nil
         }
         
         head = head?.next
         
-        return nil
+        return element
     }
     
     
