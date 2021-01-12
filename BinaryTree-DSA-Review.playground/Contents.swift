@@ -51,16 +51,17 @@ func inOrderTraversal(_ root: BinaryTreeNode?) {
     inOrderTraversal(root.rightChild)
 }
 
-let rootNode = insert(nil, 10)
-insert(rootNode, 13)
-insert(rootNode, 7)
+let rootNode = insert(nil, 3)
+insert(rootNode, 2)
 insert(rootNode, 5)
-insert(rootNode, 11)
-insert(rootNode, 9)
-insert(rootNode, 16)
+insert(rootNode, 4)
+//insert(rootNode, 5)
+//insert(rootNode, 11)
+//insert(rootNode, 9)
+//insert(rootNode, 16)
 
 inOrderTraversal(rootNode)
 
-func search(_ root: BinaryTreeNode?, _ value: Int) -> Bool {
-    // check if tree is empty
-}
+//func search(_ root: BinaryTreeNode?, _ value: Int) -> Bool {
+//    // check if tree is empty
+//}
